@@ -25,16 +25,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.\n")
 print("Your mission is to find the treasure!") 
 
-crossroads = input("You are in crossroads, and you need to choose where to go? Right or Left?\n")
-if crossroads == "right" or crossroads =="Right":
+crossroads = input("You are in crossroads, and you need to choose where to go? Right or Left?\n").lower()
+if crossroads == "right":
   print("You have arrived at the farm, now you will choose: steal a horse or wait for a ride")
-  farm = input("horse or ride?\n")
-  if farm == "ride" or farm == "Ride":
+  farm = input("horse or ride?\n").lower()
+  if farm == "ride":
     print("Your driver stole all your money and killed you, G A M E    O V E R   :(")
-  elif farm == "horse" or farm == "Horse": 
+  elif farm == "horse": 
     print("You arrived to the 'lost city', now you have 3 options. What will you choose?")
-    color = input("Yellow, Red, Gold\n")
-    if color == "yellow" or color == "Yellow":
+    color = input("Yellow, Red, Gold\n").lower()
+    if color == "yellow":
       print("you are get in to the bar and drink  a lot of beers, and you are drunk. G A M E   O V E R   :(")
       print(''' 
                  .~~~~.           .~~~~.          .~~~~.
@@ -43,7 +43,7 @@ if crossroads == "right" or crossroads =="Right":
                  |cccc|           |cccc|          |cccc|   
                  `-==-'           `-==-'          `-==-'
                  ''')
-    elif color == "red" or color == "Red":
+    elif color == "red":
       print("A bat bit you and you were killed.. bad luck.. G A M E   O V E R   :(")
       print('''  
 
@@ -58,7 +58,7 @@ if crossroads == "right" or crossroads =="Right":
                \ ((  )) /
                 '.    .'
                   `\/                        ''')
-    elif color == "gold" or color == "Gold":
+    elif color == "gold":
       print("Congratulations you found the key to the treasure chest and won it!")
       print('''  
                                                          |\../|
@@ -85,10 +85,10 @@ if crossroads == "right" or crossroads =="Right":
   < |    /__\                <  \                      .| |                |  |
   /__\                       /___\                    (__))                |  |
 ''')
-if crossroads == "left" or crossroads =="Left":
+if crossroads == "left":
   print("You have arrived at the river, now you need to choose: Swim or wait for the boat")
-  river = input("Swim or Boat?\n")
-  if river == "swim" or river == "Swim":
+  river = input("Swim or Boat?\n").lower()
+  if river == "swim":
     print("A fucking crocodile ate you... (stupid choice..) G A M E   O V E R   :(")
     print('''' 
                      .--.  .--.              
@@ -119,10 +119,10 @@ if crossroads == "left" or crossroads =="Left":
           `.          _.-'`-.
             `''---''``  jgs  `.
             ''''')
-  elif river == "boat" or river == "Boat":
+  elif river == "boat":
     print("You arrived to the 'lost island', now you have 3 options. What will you choose?")
-    color1 = input("Yellow, Red, Green\n") 
-    if color1 == "green" or color1 == "Green":
+    color1 = input("Yellow, Red, Green\n").lower() 
+    if color1 == "green":
       print("You found a weed and you get high.. G A M E   O V E R  bro..")
       print('''.
                        .:.
@@ -150,7 +150,7 @@ if crossroads == "left" or crossroads =="Left":
                         ;
 
 ''') 
-    elif color1 == "red" or color1 == "Red":  
+    elif color1 == "red":  
       print("You were attacked by monkeys and they killed you.. bad luck.. G A M E   O V E R    :(")      
       print('''
             __,__
@@ -166,7 +166,7 @@ if crossroads == "left" or crossroads =="Left":
         '._ '-=-' _.'
            '~---~'
               ''')
-    elif color1 == "yellow" or color1 == "Yellow": 
+    elif color1 == "yellow": 
       print("Congratulations! you found the map to the treasure. and you found the treasure :)")
       print('''
 
@@ -188,4 +188,4 @@ $JT&yd$     $$$$$$$$$$$$$$$$.    $    $$    $   .$$$$$$$$$$$$$$$$     $by&TL$
                                  `$        $'
                                   `$$$$$$$$
                                   
-                                  ''')  
+                                  ''')           
